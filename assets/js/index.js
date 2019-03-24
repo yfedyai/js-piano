@@ -31,8 +31,6 @@ pianoKey.forEach(item => {
 
 
 document.addEventListener('keydown', (key) => {
-    console.log(key.keyCode)
-    console.log();
     let buttonDown = key.keyCode;
     let playElement = document.querySelector(`div[data-key="${buttonDown}"]`);
     console.log('playElement: ', playElement);
